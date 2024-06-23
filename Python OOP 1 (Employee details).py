@@ -25,8 +25,8 @@ emp2 = Employee('Corey','Linn',50000)
 print(emp2.fullname())
 print(Employee.fullname(emp1)) #from class pass instance as the argument usually done for background flow check
 
-# print(emp1.fullname())
-# print(emp2.fullname())
+print(emp1.fullname())
+print(emp2.fullname())
 print(emp1.email)
 print(emp2.email)
 
