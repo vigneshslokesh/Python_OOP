@@ -13,6 +13,8 @@ class Employee:
         self.pay = pay
         self.email = first+"."+last+'@gmail.com'
 
+        Employee.num_of_emp += 1
+
     def fullname(self):
         return "{}{}".format(self.first, self.last)
     
@@ -28,7 +30,7 @@ class Employee:
         first,last,pay = emp_str.split('-')
         return cls(first,last,pay)
     
-    @staticmethod
+    @staticmethod #static methods when no arg needed of class or instance
     def is_workday(day):
         if day.weekday() == 5 or day.weekday() ==6:
             return False
@@ -46,13 +48,12 @@ import datetime
 my_date = datetime.date(2016, 7, 11)
 
 print(Employee.is_workday(my_date))
+print(Employee.num_of_emp) #print the number of employees
 
 
-
+#(The below lines can be reduced using the class methods)
 # first,last,pay = emp_str1.split("-")
-
 # new_emp1 = Employee(first,last,pay)
-
 # print(new_emp1.email)
 
 
