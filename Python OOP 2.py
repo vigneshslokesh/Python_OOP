@@ -1,4 +1,4 @@
-# SImilar to the Python OOP1(Employee details) we have made changes by adding and knowing the difference between the
+# Similar to the Python OOP1(Employee details) we have made changes by adding and knowing the difference between the
 # class variables and instance variables
 
 class Employee:
