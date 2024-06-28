@@ -5,16 +5,16 @@ class Employee:
     num_of_emp = 0 #class variable
     raise_amt = 1.04 #4%
 
-    def __init__(self,first,last,pay): #initialization for the objects
+    def __init__(self,first,last): #initialization for the objects
         self.first = first
         self.last = last
-        self.pay = pay
         
-
+    
         Employee.num_of_emp += 1
+        
     @property
-    def fullname(self): #regular method taking the instance as the argument i.e. self
-        return "{}.{}@gmail.com".format(self.first, self.last)
+    def email(self): #regular method taking the instance as the argument i.e. self
+        return "{}.{}@gmail.com".format(self.first.lower(), self.last.lower())
 
     def fullname(self): #regular method taking the instance as the argument i.e. self
         return "{} {}".format(self.first, self.last)
