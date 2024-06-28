@@ -11,11 +11,12 @@ class Employee:
         
     
         Employee.num_of_emp += 1
-        
-    @property
+
+    @property #defining as a method and accessing as a attribute
     def email(self): #regular method taking the instance as the argument i.e. self
         return "{}.{}@gmail.com".format(self.first.lower(), self.last.lower())
-
+   
+    @property #defining as a method and accessing as a attribute
     def fullname(self): #regular method taking the instance as the argument i.e. self
         return "{} {}".format(self.first, self.last)
     
