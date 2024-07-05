@@ -9,7 +9,7 @@ list = [1,22, 16, 16,45, 8]
 newlist = []
 
 while list:
-    min = l[0]
+    min = list[0]
     for x in list:
         if x > min:
             min = x
