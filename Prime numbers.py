@@ -9,11 +9,11 @@ list = [1,22, 16, 16,45, 8]
 newlist = []
 
 while list:
-    min = list[0]
+    max = list[0]
     for x in list:
-        if x > min:
-            min = x
-    newlist.append(min)
-    list.remove(min)
+        if x > max:
+            max = x
+    newlist.append(max)
+    list.remove(max)
 
 print(newlist)        
