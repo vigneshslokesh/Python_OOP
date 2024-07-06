@@ -9,7 +9,7 @@ mylist = [int(item) for item in input_str.split()]
 
 print(swaplist(mylist))
 
-#swap elements at goven positions 
+#swap elements at given positions 
 
 def swapPositions(list, pos1, pos2):
      
